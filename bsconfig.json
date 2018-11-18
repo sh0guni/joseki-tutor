@@ -3,19 +3,24 @@
   comma. If this screws with your editor highlighting, please tell us by filing
   an issue! */
 {
-  "name": "react-template",
+  "name": "joseki-tutor",
   "reason": {
     "react-jsx": 2
   },
-  "sources": {
+  "sources": [{
     "dir" : "src",
     "subdirs" : true
   },
+  {
+    "dir": "__tests__",
+    "type": "dev"
+  }],
   "package-specs": [{
-    "module": "es6"
+    "module": "commonjs"
   }],
   "suffix": ".bs.js",
   "namespace": true,
+  "bs-dev-dependencies": ["@glennsl/bs-jest"],
   "bs-dependencies": [
     "reason-react"
   ],
